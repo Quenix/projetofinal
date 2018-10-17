@@ -1,0 +1,46 @@
+ 
+1º) Análise de requesitos - Idealização - Levantamento das idéias
+
+2º) Entrega de uma página de vendas do produto
+
+====
+
+vender algo 
+		Herbalife
+			Pag. p/ compra
+
+como se vende um produto na internet?
+
+pague seguro, pay pal
+
+tafefa: uma pagina simples de vendas.
+	refêrencia: 
+
+idealização: 
+			logo
+		-------------------------
+		
+			produto
+			R$ xxx
+
+			Comprar
+
+	pagseguro: 
+	
+	PAYPAL	
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Informações do que deve ser feito durante as aulas do prof. Leo : 
+
+ 	1) entrar no google classrom
+	2) na primeira faixa "Google Sala de Aula" ->clicar no simbolo "+" (lado direito da tela)
+		2.1) "Participar da turma"
+		2.2) Digitar o código dado pelo prof. Leo: g29ch1k	
+
+====================================
+
+Aula 18/09/18 - LEO
+
+Para usar a extrutura Bootstrap row/col consultar o add abaixo:
+https://www.w3schools.com/bootstrap/bootstrap_images.asp
+
+		

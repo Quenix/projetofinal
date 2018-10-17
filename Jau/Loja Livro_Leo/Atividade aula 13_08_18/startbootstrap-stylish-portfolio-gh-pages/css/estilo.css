@@ -1,0 +1,119 @@
+/**
+*** TOP NAV BAR
+**/
+.top-nav-bar{
+  background: #e7e7e7; /* Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2U3ZTdlNyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNhZGFkYWQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(top,  #e7e7e7 0%, #adadad 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e7e7e7), color-stop(100%,#adadad)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #e7e7e7 0%,#adadad 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #e7e7e7 0%,#adadad 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #e7e7e7 0%,#adadad 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  #e7e7e7 0%,#adadad 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e7e7e7', endColorstr='#adadad',GradientType=0 ); /* IE6-8 */
+
+}
+.top-nav-bar .alinhamento{
+  min-height: 24px;
+  list-style: none;
+  padding-top: 6px;
+}
+.top-nav-bar ul{ list-style: none;}
+.top-nav-bar li{
+  border-left: 1px solid #9b9b9b;
+  border-right: 1px solid #e5e5e5;
+  color: #545454;
+  float: right;
+  font-size: 11px;
+  font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+  margin: 1px 0 0;
+  padding: 0 5px;
+}
+.top-nav-bar li:first-child{ border-right: none;}
+.top-nav-bar li:last-child{ border-left: none;}
+.top-nav-bar li a{
+  font-size: 11px;
+  padding: 3px 6px ;
+  text-decoration: none;
+
+  border: 1px solid transparent;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+.top-nav-bar li a:before{
+  content: "\00BB";
+  color: #545454;
+  padding-right: 3px;
+
+}
+.top-nav-bar li a:hover{color: #333;}
+.top-nav-bar li.msg-hello{padding: 0 11px; }
+.top-nav-bar .active{
+  background: #fff;
+  border: 1px solid #c9c9c9;
+  box-shadow: inset 0 1px 3px rgba(209,209,209,0.8)
+}
+.top-nav-bar li strong, .top-nav-bar li a, .top-nav-bar li a.btn-logout{color: #000;}
+.top-nav-bar li a.btn-logout:before{
+  content: "";
+}
+.top-nav-bar .social-buttons a{
+  display: inline;
+  float: left;
+  margin: 0 15px 0 0;
+  padding:0;
+  text-indent: -9999px;
+  width: 22px;
+}
+.top-nav-bar .social-buttons{
+  float: left;
+  margin-top: -2px;
+  width: 200px;
+}
+.social-buttons a{
+  background: url(/images/buttons-social.png) no-repeat 0 0;
+  color: #fff;
+  display: block;
+  font-size: 11px;
+  height: 22px;
+  line-height: 22px;
+  margin: 0 0 7px; 
+  opacity: 1;
+  padding-left: 29px;
+  text-decoration: none;
+}
+.social-buttons a:hover{ opacity: 0.8;}
+.social-buttons.ico-fb{
+  background-position: 0 0;
+}
+.social-buttons .ico-tw{
+  background-position: 0 -28px
+}
+.social-buttons .ico-plus{
+  background-position: 0 -56px;
+}
+.sidebar .social-buttons.buttons-black{height: 90px;}
+.social-buttons.buttons-black a{color: #000;}
+.social-buttons.buttons-black .ico-fb,
+.top-nav-bar .social-buttons.buttons-black .ico-fb{
+  background-position: 0 -78px;
+}
+.social-buttons.buttons-black .ico-tw,
+.top-nav-bar .social-buttons.buttons-black .ico-tw{
+  background-position: 0 -106px
+}
+.social-buttons.buttons-black .ico-plus,
+.top-nav-bar .social-buttons.buttons-black .ico-plus{
+  background-position: 0 -134px;
+}
+.top-nav-bar .social-buttons .ico-fb{
+  background-position: 0 -164px;
+}
+.top-nav-bar .social-buttons .ico-tw{
+  background-position: 0 -195px
+}
+.top-nav-bar .social-buttons .ico-plus{
+  background-position: 0 -228px;
+}

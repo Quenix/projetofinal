@@ -1,0 +1,162 @@
+html{
+  background-color: #E5DDE8;
+}
+
+.clearfix:after {
+  display:block;
+  clear:both;
+  width: 10%;
+}
+
+.menu {
+  width:40px;
+  margin:0px auto;
+  position:fixed;
+  top:0;left:0;
+}
+
+.menu li {
+  margin:0px;
+  white-space:nowrap;
+  width:125px;
+  list-style:none;
+}
+
+.menu > ul > li {
+  display:inline-block;
+  position:relative;
+  font-size:16px;
+}
+
+.menu > ul > li > a {
+  padding:10px 40px;
+  display:inline-block;
+  width: 40px;
+}
+
+.menu > ul > li > a > img {
+  padding:10px 40px;
+  display:inline-block;
+  width: 70px;
+}
+
+.menu > ul > li:hover > a, .menu > ul > .current-item > a {
+  background:"transparent";
+}
+
+.menu li:hover .sub-menu {
+  z-index:1;
+  opacity:1;
+}
+
+.sub-menu {
+  width:140%;
+  padding:5px 0px;
+  position: absolute;
+  top:100%;
+  left:100%;
+  z-index:-1;
+  opacity:0;
+  transition:opacity linear 0.15s;    
+}
+
+.sub-menu li {
+  display:block;
+  font-size:14px;
+}
+
+.sub-menu li a {
+  padding:10px 30px;
+  display:block;
+}
+
+.sub-menu li a:hover, .sub-menu .current-item a {
+  
+  color:#FFFFFF;
+}
+
+.destaque #destaque1 {
+
+  float:right;
+  width: 50%;
+  
+}
+
+.destaque #destaque2 {
+
+  float: left; 
+  width: 50%;
+
+}
+
+.destaque #destaque3 {
+
+  float: right;
+  width: 50%;
+
+}
+
+.destaque #destaque4 {
+
+  float: left;
+  width: 50%;
+
+}
+
+.destaque #destaque5{
+
+  position: absolute;
+  width: 20%;
+  float: left;
+  margin-left: 29%;
+  margin-top: 16%; 
+
+}
+
+.destaque #destaque6{
+
+  position: absolute;
+  width:20%;
+  margin-top: 16%;
+  margin-left: 50%;
+}
+
+.destaque #destaque7{
+
+  position: absolute;
+  width: 20%;
+  margin-top: 29%;
+  margin-left: 29%;
+
+}
+
+.destaque #destaque8{
+
+  margin-top: -27%;
+  width: 20%;
+  margin-left: 51%;
+
+}
+
+.equipes #foto_equipes {
+
+  width: 100%;
+  height: 30%;
+
+}
+
+.portfolio img{
+
+  border-radius: 10px;
+  float: left;
+  margin-top: 5%;
+  margin-left: 3%;
+  width: 30%;
+
+}
+
+.contato{
+
+  text-align: center;
+
+}

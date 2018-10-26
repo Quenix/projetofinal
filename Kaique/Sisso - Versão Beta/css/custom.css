@@ -1,0 +1,196 @@
+hr {
+  height: 10px;
+  background-color:  #ff0000;
+}
+
+/* BACKGROUND DAS REGISTROS */
+.background{
+  background-color: #f2efef;
+}
+/* ------------- */
+/* ------------- */
+
+
+/*  MENSAGEM DE SUCESSO E NEGADO */
+.alert span{
+  margin-left: 5px;
+ }
+
+/* LOGIN */
+.nav{
+  margin: 0px;
+}
+/* LOGO */
+#logo{
+  margin-top: 10px;
+  margin-left: 20%;
+  text-align: center;
+  width: 200px;
+
+}
+
+/* BOTÃO */
+
+.acc{
+  float:right;
+}
+
+/* FOOTER */
+
+/* logo atom */
+
+footer img{
+  width: 25px;
+}
+
+/* paragrafo */
+
+#flogin{
+  background-color: #ffffff;
+}
+#flogin a{
+  text-decoration: none;
+  color: #6d6767;
+}
+
+footer{
+  background-color: #f2efef;
+}
+footer p{
+  padding-top: 25px;
+  text-align: center;
+  float: center;
+  color: #6d6767;
+  margin-bottom: 30px;
+}
+
+/* ------------- */
+/* ------------- */
+
+/* NAVBAR */
+
+#principal a{
+  border-radius: 10px;
+  color: #777777;
+}
+
+#principal li a:hover{
+  border-radius: 10px;
+  background-color: #caf5f7;
+}
+
+
+#principal img{
+  width: 17px;
+  margin-bottom: 4px;
+}
+#logout li a:hover{
+  background-color: #ff7272;
+}
+
+/* ------------- */
+/* ------------- */
+
+/* ESPAÇO DA SECTION ENTRE NAVBAR */
+
+ section{
+   padding-top: 20px;
+ }
+
+ /* ------------- */
+ /* ------------- */
+
+/* INICIAÇÃO CRISTÃ */
+
+#iniciacao{
+  background-color: #f2efef;
+}
+
+h3{
+  margin-top: 10px;
+  margin-left: 30%;
+}
+
+#principal span, #principal img{
+  margin-right: 5px;
+}
+
+/* ------------- */
+/* ------------- */
+
+/* TABELA INICIAÇÃO CRISTÃ */
+
+#table_users, #users_form{
+  padding-top: 10px;
+}
+/* ------------- */
+/* ------------- */
+
+/* REGISTRO PARÓQUIA */
+
+#cadastroparoquia {
+  background-color: #f2efef;
+}
+
+/* ------------- */
+/* ------------- */
+
+/* REGISTRO CASAMENTO */
+
+#casamento_noivo, #casamento_noiva, #casamento_testemunhas{
+    background-color: #f2efef;
+}
+
+#show{
+
+  display: none;
+}
+/* ------------- */
+/* ------------- */
+
+/* CADASTRO USUÁRIOS DO SISTEMA */
+
+#cadastro{
+  background-color: #f2efef;
+}
+/* ------------- */
+/* ------------- */
+
+/* REGISTRO NOIVO E NOIVAS */
+
+.teste{
+  padding-top:5px;
+}
+/* ------------- */
+/* ------------- */
+
+
+/* PÁGINAS DE IMPRESSÃO */
+
+#page_initiation{
+  width: 100% ;
+}
+
+#page_initiation img{
+  width: 100px;
+}
+
+#page_initiation h2{
+  font-size: 18px;
+}
+
+#page_initiation h4{
+  font-size: 14px;
+}
+
+#page_initiation h6{
+  font-size: 10px;
+}
+
+
+#page_initiation body{
+  background-color: #f2efef;
+}
+
+/* ------------- */
+/* ------------- */

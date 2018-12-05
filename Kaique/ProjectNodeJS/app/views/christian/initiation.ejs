@@ -1,17 +1,13 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Iniciação Cristã</title>
+    
+    <!-- LINKS -->
+    <% include ../include/header %>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-
-    <title>Dashboard SISSO</title>
+    
 </head>
 
 <body>
@@ -25,10 +21,10 @@
 
             <ul class="list-unstyled components">
                 <li class="active">
-                    <a href="#iniciacaoSubMenu" data-toggle="collapse" aria-expanded="false">Iniciação Cristã</a>
+                    <a href="#iniciacaoSubMenu" data-toggle="collapse" aria-expanded="false"><i class="fas fa-user-cog"></i>  Iniciação Cristã</a>
                     <ul class="collapse list-unstyled show" id="iniciacaoSubMenu">
-                        <li class="active"><a href="christian_initiation.html">Realizar iniciação</a></li>
-                        <li><a href="christian_table.html">Consultar iniciações</a></li>
+                        <li class="active"><a href="/christian/initiation"><i class="fas fa-user-plus"></i>  Realizar iniciação</a></li>
+                        <li><a href="/christian/table"><i class="fas fa-th-list"></i>  Consultar iniciações</a></li>
                     </ul>
                 </li>
             </ul>
@@ -49,7 +45,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col divContent">
-                        <form>
+                        <form method="POST" action="/christian/create">
                             <div class="form-group">
                                 <h1>Iniciação cristã</h1>
                                 <p>Preencha todos os dados corretamente</p>
@@ -65,7 +61,7 @@
                                                     <i class="fas fa-user"></i>
                                                 </span>
                                             </span>
-                                            <input type="text" class="form-control" id="nomeCompleto" placeholder="Nome Completo">
+                                            <input type="text" class="form-control" id="nomeCompleto" placeholder="Nome Completo" name="nome">
                                         </div>
                                     </div>
                                 </div>
@@ -78,7 +74,7 @@
                                                     <i class="fas fa-calendar-alt"></i>
                                                 </span>
                                             </span>
-                                            <input type="text" class="form-control" id="dataNascimento" placeholder="Data de nascimento">
+                                            <input type="text" class="form-control" id="dataNascimento" placeholder="Data de nascimento" name="dataNasc">
                                         </div>
                                     </div>
                                 </div>
@@ -91,7 +87,7 @@
                                                     <i class="fas fa-certificate"></i>
                                                 </span>
                                             </span>
-                                            <input type="text" class="form-control" id="certidaoNascimento" placeholder="Nº da Certidão">
+                                            <input type="text" class="form-control" id="certidaoNascimento" placeholder="Nº da Certidão" name="nCertidao">
                                         </div>
                                     </div>
                                 </div>
@@ -139,7 +135,7 @@
                                                     <i class="fas fa-user"></i>
                                                 </span>
                                             </span>
-                                            <input type="text" class="form-control" id="nomePai" placeholder="Nome Completo">
+                                            <input type="text" class="form-control" id="nomePai" placeholder="Nome Completo" name="pai">
                                         </div>
                                     </div>
                                 </div>
@@ -152,7 +148,7 @@
                                                     <i class="fas fa-user"></i>
                                                 </span>
                                             </span>
-                                            <input type="text" class="form-control" id="nomeMae" placeholder="Nome Completo">
+                                            <input type="text" class="form-control" id="nomeMae" placeholder="Nome Completo" name="mae">
                                         </div>
                                     </div>
                                 </div>
@@ -165,7 +161,7 @@
                                                     <i class="icon-grandfather"></i>
                                                 </span>
                                             </span>
-                                            <input type="text" class="form-control" id="avoPatMasc" placeholder="Nome Completo">
+                                            <input type="text" class="form-control" id="avoPatMasc" placeholder="Nome Completo" name="avoPatMasc">
                                         </div>
                                     </div>
                                 </div>
@@ -178,7 +174,7 @@
                                                     <i class="icon-grandmother"></i>
                                                 </span>
                                             </span>
-                                            <input type="text" class="form-control" id="avoPatFem" placeholder="Nome Completo">
+                                            <input type="text" class="form-control" id="avoPatFem" placeholder="Nome Completo" name="avoPatFem">
                                         </div>
                                     </div>
                                 </div>
@@ -191,7 +187,7 @@
                                                     <i class="icon-grandfather"></i>
                                                 </span>
                                             </span>
-                                            <input type="text" class="form-control" id="avoMatMasc" placeholder="Nome Completo">
+                                            <input type="text" class="form-control" id="avoMatMasc" placeholder="Nome Completo" name="avoMatMasc">
                                         </div>
                                     </div>
                                 </div>
@@ -204,7 +200,7 @@
                                                     <i class="icon-grandmother"></i>
                                                 </span>
                                             </span>
-                                            <input type="text" class="form-control" id="avoMatFem" placeholder="Nome Completo">
+                                            <input type="text" class="form-control" id="avoMatFem" placeholder="Nome Completo" name="avoMatFem">
                                         </div>
                                     </div>
                                 </div>
@@ -217,7 +213,7 @@
                                                     <i class="fas fa-user"></i>
                                                 </span>
                                             </span>
-                                            <input type="text" class="form-control" id="nomePadrinho" placeholder="Nome Completo">
+                                            <input type="text" class="form-control" id="nomePadrinho" placeholder="Nome Completo" name="padrinho">
                                         </div>
                                     </div>
                                 </div>
@@ -230,7 +226,7 @@
                                                     <i class="fas fa-user"></i>
                                                 </span>
                                             </span>
-                                            <input type="text" class="form-control" id="nomeMadrinha" placeholder="Nome Completo">
+                                            <input type="text" class="form-control" id="nomeMadrinha" placeholder="Nome Completo" name="madrinha">
                                         </div>
                                     </div>
                                 </div>
@@ -243,7 +239,7 @@
                                                     <i class="fas fa-mobile-alt"></i>
                                                 </span>
                                             </span>
-                                            <input type="text" class="form-control" id="nTelefone" placeholder="Nº Telefone">
+                                            <input type="text" class="form-control" id="nTelefone" placeholder="Nº Telefone" name="telefone">
                                         </div>
                                     </div>
                                 </div>
@@ -256,7 +252,7 @@
                                                     <i class="fas fa-at"></i>
                                                 </span>
                                             </span>
-                                            <input type="text" class="form-control" id="email" placeholder="E-mail">
+                                            <input type="text" class="form-control" id="email" placeholder="E-mail" name="email">
                                         </div>
                                     </div>
                                 </div>
@@ -269,7 +265,7 @@
                                                     <i class="fas fa-road"></i>
                                                 </span>
                                             </span>
-                                            <input type="text" class="form-control" id="rua" placeholder="Rua">
+                                            <input type="text" class="form-control" id="rua" placeholder="Rua" name="rua">
                                         </div>
                                     </div>
                                 </div>
@@ -282,7 +278,7 @@
                                                     <i class="fas fa-street-view"></i>
                                                 </span>
                                             </span>
-                                            <input type="text" class="form-control" id="bairro" placeholder="Bairro">
+                                            <input type="text" class="form-control" id="bairro" placeholder="Bairro" name="bairro">
                                         </div>
                                     </div>
                                 </div>
@@ -295,7 +291,7 @@
                                                     <i class="fas fa-at"></i>
                                                 </span>
                                             </span>
-                                            <input type="text" class="form-control" id="cidade" placeholder="Cidade">
+                                            <input type="text" class="form-control" id="cidade" placeholder="Cidade" name="cidade">
                                         </div>
                                     </div>
                                 </div>
@@ -308,7 +304,7 @@
                                                     <i class="fas fa-map-marker-alt"></i>
                                                 </span>
                                             </span>
-                                            <input type="text" class="form-control" id="cep" placeholder="CEP">
+                                            <input type="text" class="form-control" id="cep" placeholder="CEP" name="cep">
                                         </div>
                                     </div>
                                 </div>
@@ -323,15 +319,7 @@
             <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
             <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-            <script>
-                $(document).ready(function () {
-                    $("#sidebarCollapse").on("click", function () {
-                        $("#sidebar").toggleClass("active");
-                        $(this).toggleClass("active");
-                    });
-                });
-
-            </script>
+            <script src="/assets/script/script.js"></script>
 </body>
 
 </html>

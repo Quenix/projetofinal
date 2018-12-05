@@ -12,6 +12,7 @@ routerTableChristian(app);
 
 const MongoClient = require('mongodb').MongoClient 
 const uri = "mongodb://sissoadmin:sissoadmin1@ds121599.mlab.com:21599/sissodb"
+
 MongoClient.connect(uri, (err, client) => {
   if(err) return console.log(err)
 

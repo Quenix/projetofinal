@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>SISSO</title>
+
+    <!-- LINKS -->
+    <% include ../include/header %>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 col-sm-10 login-form">
+                            <form action="/christian/initiation" method="GET">
+                                <div class="avatar">
+                                    <p>LOGOTIPO</p>
+                                </div>
+                                <h2 class="text-center">SISSO</h2>   
+                                <div class="form-group">
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                          <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                        </div>
+                                        <input type="text" class="form-control" placeholder="E-mail">
+                                      </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                          <span class="input-group-text"><i class="fas fa-user-lock"></i></span>
+                                        </div>
+                                        <input type="password" class="form-control" placeholder="Senha">
+                                      </div>
+                                </div>        
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-primary btn-lg btn-block">Acessar <i class="fas fa-key"></i></button>
+                                </div>
+                            </form>
+                        </div>
+            </div>
+        </div>
+    </div>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+            <script src="/assets/script/script.js"></script>
+</body>
+
+</html>

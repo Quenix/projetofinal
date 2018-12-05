@@ -1,21 +1,15 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Tabela Cristões</title>
 
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
-        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-        <link rel="stylesheet" href="css/style.css">
+        <!-- LINKS -->
+        <% include ../include/header %>
 
-        <title>Dashboard SISSO</title>
     </head>
 
     <body>
-
         <div class="wrapper">
             <!-- SIDEBAR MENU -->
             <nav id="sidebar">
@@ -25,10 +19,10 @@
     
                 <ul class="list-unstyled components">
                     <li class="active">
-                        <a href="#iniciacaoSubMenu" data-toggle="collapse" aria-expanded="false">Iniciação Cristã</a>
+                        <a href="#iniciacaoSubMenu" data-toggle="collapse" aria-expanded="false"><i class="fas fa-user-cog"></i> Iniciação Cristã</a>
                         <ul class="collapse list-unstyled show" id="iniciacaoSubMenu">
-                            <li><a href="christian_initiation.html">Realizar iniciação</a></li>
-                            <li class="active"><a href="christian_table.html">Consultar iniciações</a></li>
+                            <li><a href="/christian/initiation"><i class="fas fa-user-plus"></i> Realizar iniciação</a></li>
+                            <li class="active"><a href="/christian/table"><i class="fas fa-th-list"></i> Consultar iniciações</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -100,15 +94,7 @@
                 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
                 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-                <script>
-                    $(document).ready(function () {
-                        $("#sidebarCollapse").on("click", function () {
-                            $("#sidebar").toggleClass("active");
-                            $(this).toggleClass("active");
-                        });
-                    });
-
-                </script>
+                <script src="/assets/script/script.js"></script>
     </body>
 
 </html>

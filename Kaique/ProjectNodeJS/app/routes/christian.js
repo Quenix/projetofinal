@@ -1,21 +1,31 @@
-module.exports = function(app) {
+module.exports = (app) => {
 
-    app.get('/rota/teste', function(req, res) {
+    app.get('/rota/teste', (req, res) => {
        
         res.render('christian/teste');
     });
 
-    app.get('/christian/initiation', function(req, res) {
+    app.get('/christian/initiation', (req, res) => {
        
         res.render('christian/initiation');
     });
 
-    app.get('/christian/table', function(req, res) {
-    
+    app.get('/christian/table', (req, res) => {
+
+        db.
         res.render('christian/table');
     });
 
-    app.post('/christian/create', function(req, res) {
+    app.get('/christian/data', (req, res) => {
+
+        db.collection('christians').find().toArray((err, results) => {
+            if(err) return console.log(err)
+
+            console.log(results);
+        })
+    });
+
+    app.post('/christian/create', (req, res) => {
         
         db.collection('christians').save(req.body, (err, result) => {
             if(err) return console.log(err)

@@ -1,6 +1,6 @@
-module.exports = function(app){
+module.exports = (app) => {
 
-    app.get('/parish', function(req, res) {
+    app.get('/parish', (req, res) => {
 
         res.render('parish/create');
     });
